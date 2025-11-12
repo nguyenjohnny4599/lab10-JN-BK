@@ -1,3 +1,7 @@
+# https://github.com/nguyenjohnny4599/lab10-JN-BK
+# Partner 1: Bogdan Krintal
+# Partner 2: Johnny Nguyen
+
 """
 calculator.py
 - Defines functions used to create a simple calculator
@@ -15,7 +19,7 @@ def hypotenuse(a, b): return math.hypot(a, b) # can have negative nums
 def add(a, b):
     return a + b
 
-def sub(a,b):
+def subtract(a,b):
     return a - b
 
 def mul(a,b):
@@ -26,7 +30,7 @@ def div(a,b):
         raise ZeroDivisionError()
     return b / a
 
-def log(a,b):
+def logarithm(a,b):
     if a <= 0 or a == 1:
         raise ValueError()
     if b <= 0:
