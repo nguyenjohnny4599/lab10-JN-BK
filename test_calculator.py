@@ -1,3 +1,6 @@
+# https://github.com/nguyenjohnny4599/lab10-JN-BK
+# Partner 1: Bogdan Krintal
+# Partner 2: Johnny Nguyen
 import unittest
 from calculator import *
 
@@ -44,14 +47,14 @@ class TestCalculator(unittest.TestCase):
     # ##########################
         for bad_base in (-3,-1,1,0):
             with self.assertRaises(ValueError):
-                log(bad_base, 10)
+                logarithm(bad_base, 10)
     
     ######## Partner 1
     def test_log_invalid_argument(self): # 1 assertion
         with self.assertRaises(ValueError):
-            self.assertAlmostEqual(log(2,4), 2.0)
-            self.assertAlmostEqual(log(0,8), 3.0)
-            self.assertAlmostEqual(log(3,27), 3.0)
+            self.assertAlmostEqual(logarithm(2,4), 2.0)
+            self.assertAlmostEqual(logarithm(0,8), 3.0)
+            self.assertAlmostEqual(logarithm(3,27), 3.0)
     #     # call log function inside, example:
     #     # with self.assertRaises(<INSERT_ERROR_TYPE>):
     #     #     logarithm(0, 5)
