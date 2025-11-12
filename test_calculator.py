@@ -42,7 +42,7 @@ class TestCalculator(unittest.TestCase):
     #     # use same technique from test_divide_by_zero
     #     fill in code
     # ##########################
-        for bad_base(-3,-1,1,0):
+        for bad_base in (-3,-1,1,0):
             with self.assertRaises(ValueError):
                 log(bad_base, 10)
     
